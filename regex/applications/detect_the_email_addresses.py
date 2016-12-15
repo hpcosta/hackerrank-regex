@@ -6,7 +6,7 @@ Created on 13 Dec 2016
 
 # https://www.hackerrank.com/challenges/detect-the-email-addresses
 
-Regex_Pattern = r"[\w\.-]+@[\w\.-]+\b"   # Do not delete 'r'.
+regex = r"[\w\.-]+@[\w\.-]+\b"   # Do not delete 'r'.
 
 import re
 
@@ -19,7 +19,7 @@ for i in range(0, n_lines):
 
 str_content = ' '.join(content)
 
-emails =  re.findall(Regex_Pattern, str_content)
+emails =  re.findall(regex, str_content)
 
 l = []
 for email in emails:
