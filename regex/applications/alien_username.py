@@ -7,12 +7,23 @@ Created on 15 Dec 2016
 # https://www.hackerrank.com/challenges/alien-username
 
 
-import re
-regex = r'^[\_\.](?=[0-9]+)\d*[a-zA-Z]*_?$'
 
-n_tests = int(raw_input())
-for i in range(0, n_tests):
-   if bool(re.match(regex, raw_input())):
-      print("Valid".upper())
-   else:
-      print("Invalid".upper())
+
+import re
+
+# number of lines
+n_lines = int(raw_input())
+
+
+content = []
+for i in range(0, n_lines):
+   content.append(raw_input())
+# content
+str_content = ' '.join(content)
+
+
+# number of test cases
+n_test_cases = int(raw_input())
+for j in range(0, n_test_cases):
+   sub_word = raw_input().strip()
+   print(len(re.findall(r'\b%s\b' % sub_word, str_content)))
