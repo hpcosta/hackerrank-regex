@@ -8,7 +8,7 @@ Created on 13 Dec 2016
 
 
 
-Regex_Pattern = r"(\d{1,3})[\s-](\d{1,3})[\s-](\d{4,10})"   # Do not delete 'r'.
+regex = r"(\d{1,3})[\s-](\d{1,3})[\s-](\d{4,10})"   # Do not delete 'r'.
 
 import re
 
@@ -19,6 +19,6 @@ local_area_code = ''
 contry_code = ''
 
 for i in range(0, n_lines):
-   match = re.search(Regex_Pattern, raw_input())
+   match = re.search(regex, raw_input())
    print "CountryCode=" + match.group(1) + ",LocalAreaCode=" + match.group(2) + ",Number=" + match.group(3)
    

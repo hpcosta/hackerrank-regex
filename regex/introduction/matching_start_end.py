@@ -5,9 +5,9 @@ Created on 12 Dec 2016
 '''
 # https://www.hackerrank.com/challenges/matching-start-end
 
-Regex_Pattern = r"^(\d)(\w){4}\.$"   # Do not delete 'r'.
+regex = r"^(\d)(\w){4}\.$"   # Do not delete 'r'.
 
 
 import re
 
-print(str(bool(re.search(Regex_Pattern, raw_input()))).lower())
+print(str(bool(re.search(regex, raw_input()))).lower())

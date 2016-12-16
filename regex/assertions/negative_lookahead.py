@@ -17,13 +17,13 @@ Created on 13 Dec 2016
 # If S  = goooo, then regex should match g ooo o. Because the first g is not follwed by g and the last o is not followed by o.
 
 
-Regex_Pattern = r"(.)(?!\1)"   # Do not delete 'r'.
+regex = r"(.)(?!\1)"   # Do not delete 'r'.
 
 import re
 
 Test_String = raw_input()
 
-match = re.findall(Regex_Pattern, Test_String)
+match = re.findall(regex, Test_String)
 
 print "Number of matches :", len(match)
 

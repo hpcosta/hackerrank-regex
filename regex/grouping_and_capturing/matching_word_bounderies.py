@@ -16,9 +16,9 @@ Created on 13 Dec 2016
 # input: Found any match?
 # output: true
 
-Regex_Pattern = r'\b[aeiouAEIOU][a-zA-Z]*\b'   # Do not delete 'r'.
+regex = r'\b[aeiouAEIOU][a-zA-Z]*\b'   # Do not delete 'r'.
 
 
 import re
 
-print(str(bool(re.search(Regex_Pattern, raw_input()))).lower())
+print(str(bool(re.search(regex, raw_input()))).lower())

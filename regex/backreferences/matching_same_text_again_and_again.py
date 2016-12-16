@@ -32,11 +32,11 @@ Created on 13 Dec 2016
 # 19 character: should be same as 9th character.
 # 20 character: should be same as 10th character.
 
-Regex_Pattern = r'^([a-z]\w\s\W\d\D[A-Z][a-zA-Z][aieouAEIOU]\S)\1'   # Do not delete 'r'.
+regex = r'^([a-z]\w\s\W\d\D[A-Z][a-zA-Z][aieouAEIOU]\S)\1'   # Do not delete 'r'.
 
 import re
 
-print(str(bool(re.search(Regex_Pattern, raw_input()))).lower())
+print(str(bool(re.search(regex, raw_input()))).lower())
 
 
 

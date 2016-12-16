@@ -5,11 +5,11 @@ Created on 13 Dec 2016
 '''
 # https://www.hackerrank.com/challenges/backreferences-to-failed-groups
 
-Regex_Pattern = r"^\d{2}(-?)\d{2}\1\d{2}\1\d{2}$"   # Do not delete 'r'.
+regex = r"^\d{2}(-?)\d{2}\1\d{2}\1\d{2}$"   # Do not delete 'r'.
 
 import re
 
-print(str(bool(re.search(Regex_Pattern, raw_input()))).lower())
+print(str(bool(re.search(regex, raw_input()))).lower())
 
 
 
