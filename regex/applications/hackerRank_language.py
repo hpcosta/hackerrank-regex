@@ -15,7 +15,6 @@ dummy_list = 'C:CPP:JAVA:PYTHON:PERL:PHP:RUBY:CSHARP:HASKELL:CLOJURE:BASH:SCALA:
 n_tests = int(raw_input())
 for i in range(0, n_tests):
    input = raw_input()
-   #print(input[1])
    flag = False
    for lang in dummy_list:
       if bool(re.match(r'^(\d{5}\s)' + lang.lower() + '$', input.strip().lower())):
